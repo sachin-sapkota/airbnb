@@ -2,12 +2,17 @@
   <head>
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   
+   -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
   </head>
   <body>
     <!-- navbar -->
@@ -168,10 +173,112 @@
             <hr style="border: 1px solid #ddd; margin: 20px 0" />
 
             <span style="font-weight: 600; font-size: 20px">Meet you host</span>
+            <div class="host-details-wrapper">
+              <div class="host-detail-card">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    flex: 1 0 0;
+                    align-items: center;
+                    gap: 2px;
+                  "
+                >
+                  <div style="position: relative">
+                    <img
+                      class="host-image"
+                      src="images/profile-image.png"
+                      width="80"
+                      height="80"
+                    />
+
+                    <div
+                      style="
+                        position: absolute;
+                        bottom: -10px;
+                        right: -10px;
+                        width: 50px;
+                        height: 50px;
+                      "
+                    >
+                      <img
+                        style="max-width: 100%; max-height: 100%"
+                        src="images/verified.png"
+                        width="50"
+                        height="50"
+                      />
+                    </div>
+                  </div>
+                  <span
+                    style="
+                      font-size: large;
+                      font-weight: 600;
+                      text-align: center;
+                      max-width: 80px;
+                      line-height: 1.2;
+                    "
+                    >Sachin Sapkota</span
+                  >
+
+                  <span
+                    style="
+                      font-weight: 400;
+                      font-size: small;
+                      text-align: center;
+                    "
+                  >
+                    Super host</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    width: 40%;
+                  "
+                >
+                  <div>
+                    <div style="font-weight: 600; font-size: large">79</div>
+                    <div style="font-weight: 400; font-size: small">
+                      Reviews
+                    </div>
+                  </div>
+                  <hr
+                    style="
+                      border: 1px solid #f4f4f4;
+                      margin: 10px 0;
+                      width: 100%;
+                    "
+                  />
+                  <div>
+                    <div style="font-weight: 600; font-size: large">4.82</div>
+                    <div style="font-weight: 400; font-size: small">Rating</div>
+                  </div>
+                  <hr
+                    style="
+                      border: 1px solid #f4f4f4;
+                      margin: 10px 0;
+                      width: 100%;
+                    "
+                  />
+                  <div>
+                    <div style="font-weight: 600; font-size: large">10</div>
+                    <div style="font-weight: 400; font-size: small">
+                      Years hosting
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- right order section -->
+
         <div class="order">
-          <div class="order-container">
+          <form class="order-container">
             <div
               style="
                 display: flex;
@@ -192,22 +299,68 @@
               </div>
             </div>
 
-            <div
-              style="
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                border: 1px solid black;
-                border-radius: 10px;
-              "
-            >
-              <div>fdfs</div>
-              <div>fdfs</div>
-              <div style="grid-column: span 2; border: 1px solid black">
-                fsfdsf
+            <div class="wrapper">
+              <div style="display: flex; flex-direction: column; gap: 5px">
+                <span style="font-weight: 500; font-size: 14px">CHECK-IN</span>
+                <span style="font-weight: 300; font-size: 16px">8/2/2023</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 5px">
+                <span style="font-weight: 500; font-size: 14px">CHECK-OUT</span>
+                <span style="font-weight: 300; font-size: 16px">12/2/2023</span>
+              </div>
+
+              <div
+                style="
+                  grid-column: span 2;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 5px;
+                "
+              >
+                <span style="font-weight: 500; font-size: 14px">GUESTS</span>
+                <span style="font-weight: 300; font-size: 16px">12/2/2023</span>
               </div>
             </div>
-          </div>
+            <button>Reserve</button>
+            <div
+              style="
+                text-align: center;
+                color: rgb(226, 59, 59);
+                width: 100%;
+                margin-top: 10px;
+                font-weight: 300;
+                font-size: 14px;
+              "
+            >
+              Yout won't be charged yet
+            </div>
+            <div style="display: flex; flex-direction: column">
+              <div class="charge">
+                <span class="header">$110 x 5 nights</span>
+                <span class="amount">$89</span>
+              </div>
+              <div class="charge">
+                <span class="header">Cleaning fee</span>
+                <span class="amount">$22</span>
+              </div>
+              <div class="charge">
+                <span class="header">Airbnb service fee</span>
+                <span class="amount">$89</span>
+              </div>
+            </div>
+            <hr style="border: 1px solid #ddd; margin: 20px 0" />
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 500;
+              "
+            >
+              <span>Total before taxes</span>
+              <span>$653</span>
+            </div>
+          </form>
         </div>
       </div>
     </div>
