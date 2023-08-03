@@ -16,5 +16,5 @@ jobs:
     - name: Build and Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ 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 }}
         publish_dir: ./ # Change this if your website is in a subdirectory
